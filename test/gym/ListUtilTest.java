@@ -71,13 +71,9 @@ class ListUtilTest {
     void saveToFileTest() {
 
         listUtil.test = true;
-        Customer c1 = new Customer();
-        c1.setName("Ashkan");
-        c1.setPersonNumber("9108302222");
-        c1.setRegDate("2020-10-10");
-        c1.setCurrentDate(DateUtil.getDateNowFormat());
+        Customer c = new Customer("9108302222","Ashkan","2020-10-10",DateUtil.getDateNowFormat());
         List<Customer> customers = new ArrayList<>();
-        customers.add(c1);
+        customers.add(c);
         listUtil.saveToPtFile(customers);
         Scanner readFile = null;
         try {

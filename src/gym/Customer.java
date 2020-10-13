@@ -13,10 +13,11 @@ public class Customer {
     private String regDate;
     private String currentDate;
 
-    public Customer(String personNumber, String name, String regDate ) {
+    public Customer(String personNumber, String name, String regDate,String currentDate ) {
         this.personNumber = personNumber;
         this.name = name;
         this.regDate = regDate;
+        this.currentDate = currentDate;
     }
 
     public Customer() {}

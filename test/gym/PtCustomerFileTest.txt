@@ -47,3 +47,9 @@ Personal Number--->9108302222
 Registered date--->2020-10-10
 Entry Time--->2020-10-13 23:56:21
 
+|----Customers report----|
+Name--->Ashkan
+Personal Number--->9108302222
+Registered date--->2020-10-10
+Entry Time--->2020-10-14 00:23:14
+
