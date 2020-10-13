@@ -1,0 +1,49 @@
+
+Customer
+Name:--->Ashkan
+Personal Number:--->9108302222
+Registered date :--->2020-10-10
+Current date:--->2020-10-13 23:04:22
+
+Customer
+Name:--->Ashkan
+Personal Number:--->9108302222
+Registered date :--->2020-10-10
+Current date:--->2020-10-13 23:05:51
+
+Customer
+Name:--->Ashkan
+Personal Number:--->9108302222
+Registered date :--->2020-10-10
+Current date:--->2020-10-13 23:12:22
+
+Customer
+Name:--->Ashkan
+Personal Number:--->9108302222
+Registered date :--->2020-10-10
+Current date:--->2020-10-13 23:22:55
+
+Customer
+Name:--->Ashkan
+Personal Number:--->9108302222
+Registered date :--->2020-10-10
+Current date:--->2020-10-13 23:31:52
+
+Customer
+Name:--->Ashkan
+Personal Number:--->9108302222
+Registered date :--->2020-10-10
+Current date:--->2020-10-13 23:39:24
+
+Customer
+Name:--->Ashkan
+Personal Number:--->9108302222
+Registered date :--->2020-10-10
+Current date:--->2020-10-13 23:46:20
+
+|----Customers report----|
+Name--->Ashkan
+Personal Number--->9108302222
+Registered date--->2020-10-10
+Entry Time--->2020-10-13 23:56:21
+

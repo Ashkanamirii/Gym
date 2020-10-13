@@ -1,0 +1,12 @@
+|----Customers report----|
+Name--->Diamanda Djedi
+Personal Number--->7608021234
+Registered date--->2020-01-30
+Current date--->2020-10-13 23:50:39
+
+|----Customers report----|
+Name--->Diamanda Djedi
+Personal Number--->7608021234
+Registered date--->2020-01-30
+Current date--->2020-10-13 23:52:42
+
