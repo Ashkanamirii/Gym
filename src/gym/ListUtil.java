@@ -14,9 +14,10 @@ import java.util.Scanner;
  * Copyright: MIT
  */
 public class ListUtil {
-
+     //två instans variable används när testerna körs
     public Boolean test = false;
     public String name = null;
+
     String filePathIn = "resource/customers.txt";
     String filePathOut = "resource/ptCustomerFile.txt";
 
@@ -47,12 +48,11 @@ public class ListUtil {
         List<Customer> customerList = listUtil.getCustomersFromFile();
         List<Customer> gymMemberList;
         while (true) {
-            String inParam;
             if (test) {
                 gymMemberList = checkCustomerRegisterDate(customerList, name);
                 return gymMemberList;
             } else {
-                inParam = JOptionPane.showInputDialog("Select your personal number or name!");
+                String inParam = JOptionPane.showInputDialog("Select your personal number or name!");
                 if (inParam == null || inParam.isEmpty() || inParam.isBlank())
                     System.exit(0);
                 inParam.trim();
@@ -67,8 +67,8 @@ public class ListUtil {
         System.out.println("gymMemberList\n " + gymMemberList);
         if (test)
             filePathOut = "test/gym/PtCustomerFileTest.txt";
-        String textToAppend = gymMemberList.get(0).toString();
 
+        String textToAppend = gymMemberList.get(0).toString();
         try (FileWriter fileWriter = new FileWriter(filePathOut, true);//Set true for append mode.
              PrintWriter printWriter = new PrintWriter(fileWriter)) {
             printWriter.println(textToAppend);  //New line
@@ -84,7 +84,7 @@ public class ListUtil {
 
     protected List<Customer> checkCustomerRegisterDate(List<Customer> customerList, String inParam) {
         List<Customer> gymMemberList = new ArrayList<>();
-        Long differentDays;
+        long differentDays;
         boolean check = false;
         for (Customer customer : customerList) {
             if (customer.getName().equalsIgnoreCase(inParam) || customer.getPersonNumber().equals(inParam)) {

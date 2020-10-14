@@ -20,7 +20,7 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 class ListUtilTest {
 
-    private final ListUtil listUtil = new ListUtil();
+    private ListUtil listUtil = new ListUtil();
 
     @Test
     void readAndAddFileTest() {

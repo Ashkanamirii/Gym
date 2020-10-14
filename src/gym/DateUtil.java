@@ -16,24 +16,20 @@ import java.util.Date;
  */
 public class DateUtil {
 
-    public  static Long  durationDates(String date) {
-        LocalDate fileDate;
+    public static Long durationDates(String registerDate) {
+        LocalDate regDate;
         LocalDate currentDate;
-            DateTimeFormatter formatter1 = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-            fileDate = LocalDate.from(LocalDate.parse(date, formatter1));
-            SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
-            Date date1 = new Date();
-            currentDate = LocalDate.parse(formatter.format(date1), formatter1);
-        long different = ChronoUnit.DAYS.between(fileDate, currentDate);
-        return different;
+        regDate = LocalDate.parse(registerDate);
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+        Date now = new Date();
+        currentDate = LocalDate.parse(formatter.format(now));
+        return ChronoUnit.DAYS.between(regDate, currentDate);
     }
 
     public static String getDateNowFormat() {
         //Get current date time
         LocalDateTime DateNow = LocalDateTime.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-        String dateNowString = DateNow.format(formatter);
-        return dateNowString;
-
+        return DateNow.format(formatter);
     }
 }
