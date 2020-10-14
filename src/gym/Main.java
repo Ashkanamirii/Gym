@@ -12,7 +12,6 @@ public class Main {
     private static ListUtil listUtil = new ListUtil();
 
     public static void main(String[] args) {
-        listUtil.getCustomersFromFile();
         listUtil.addMemberToFile();
     }
 }

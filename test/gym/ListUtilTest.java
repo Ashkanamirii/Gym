@@ -23,7 +23,7 @@ class ListUtilTest {
     private ListUtil listUtil = new ListUtil();
 
     @Test
-    void readAndAddFileTest() {
+    void getCustomersFromFile() {
         listUtil.test = true;
         List<Customer> customerList = listUtil.getCustomersFromFile();
         assertNotNull(customerList);
@@ -68,7 +68,7 @@ class ListUtilTest {
     }
 
     @Test
-    void saveToFileTest() {
+    void saveToPtFileTest() {
 
         listUtil.test = true;
         Customer c = new Customer("9108302222","Ashkan","2020-10-10",DateUtil.getDateNowFormat());

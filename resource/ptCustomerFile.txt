@@ -22,3 +22,9 @@ Personal Number--->7805211234
 Registered date--->2020-08-04
 Entry Time--->2020-10-14 21:51:11
 
+|----Customers report----|
+Name--->Nahema Ninsson
+Personal Number--->7805211234
+Registered date--->2020-08-04
+Entry Time--->2020-10-15 00:09:45
+
