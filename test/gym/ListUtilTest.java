@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -28,6 +29,8 @@ class ListUtilTest {
         List<Customer> customerList = listUtil.getCustomersFromFile();
         assertNotNull(customerList);
         assertEquals(customerList.size(), 2);
+        assertNotEquals(customerList.size(),10);
+        assertTrue(customerList.toString().contains("2020-01-30"));
     }
 
     @Test
